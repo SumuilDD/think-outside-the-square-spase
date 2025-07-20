@@ -1,16 +1,17 @@
 .container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
+    font-family: roboto;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
 
-  @media (max-width: 550px) {
+    @media (max-width: 550px) {
     padding: 0 10px;
   }
 }
 
 .site-header{
     background-color:#FFD400; /*жовтий фон*/
-    padding:24px 40px;/*внутрішні відступи: 24(верх/низ), 40(справ/зліва)*/
+    padding:20px 40px;/*внутрішні відступи: 24(верх/низ), 40(справ/зліва)*/
     display: flex; /*роблю хедер flex-контейнером*/
     justify-content: center;/*вирівнює дочірній .nav по центру*/
     border-buttom:1px solid rgba(0,0,0,0.1)/*тонка межа внизу*/
@@ -34,7 +35,7 @@
     font-family: roboto;
     grid-column: 2; /* Розміщуємо список меню в центральній колонці (2 з 3) */
     display:flex;   /* робимо список горизонтальним */
-    gap: 32px; /* проміжок між пунктами меню */
+    gap: 40px; /* проміжок між пунктами меню */
     list-style:none; /*прибираємо стандартні маркери <ul>*/
     margin: 0; /* прибираємо зовнішній відступ */
     padding: 0; /* прибираємо внутрішній відступ */
@@ -84,7 +85,7 @@
     font-size:8px;
     position: absolute; /* абсолютне позиціонування */
     top: -10px; /* піднімаємо над текстом */
-    right: -25px; /* трохи зсуваємо вправо */
+    right: -20px; /* трохи зсуваємо вправо */
 
 }
 
@@ -103,5 +104,99 @@
 }
 
 .cta:hover { //наведення
-  background-color: #333; /* трохи світліший фон при наведенні */
+    background-color: #333; /* трохи світліший фон при наведенні */
+}
+
+
+
+/*  S    */
+
+
+.FirstSLide{
+    background-color:#FFD400; /*жовтий фон*/
+    padding:24px 30px;/*внутрішні відступи: (верх/низ),(справ/зліва)*/ 
+}
+
+.hero-title{
+    padding-top: 200px;
+    font-size:150px;
+    margin:0;
+}
+
+.strilcaUP{
+    display: block;         /* дозволяє margin працювати */
+    margin-left: auto;      /* зліва автоматичний відступ (зозволяє зробити відступ зліва скільки треба)*/
+    margin-right: 20px;        /* справа нічого — притискає фото до правого краю */
+    width:53px;
+    height:20px
+}
+
+.hero-description{
+    display: grid; /* Використовуємо CSS Grid для точного розміщення елементів у сітці */
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 60px;
+    padding-bottom:75px;
+    gap: 90px;
+}
+
+.hero-description p{
+    text-align: left;
+    margin:0;
+    font-size: 24px;
+    width: 309px;
+    height:135px;
+}
+
+.hero-description button {
+  position: relative;          /* Дозволяє абсолютно позиціонувати псевдоелемент всередині кнопки */
+  overflow: hidden;            /* Обрізає все, що виходить за межі кнопки (псевдоелемент не вилізе за контур) */
+  font-family: roboto;         /* Шрифт тексту кнопки */
+  justify-self: end;           /* Вирівнює кнопку праворуч у сітці (якщо контейнер — grid) */
+  width: 260px;                /* Фіксована ширина кнопки */
+  height: 65px;                /* Фіксована висота кнопки */
+  border-radius: 180px;        /* Максимальне округлення кутів (практично робить кнопку овальною) */
+  border: 4px solid white;     /* Рамка 4px, суцільна, білого кольору */
+ /* Типи ліній (border-style):
+solid	Суцільна лінія
+dashed	Пунктирна лінія (великий штрих)
+dotted	Точкова лінія
+double	Подвійна лінія
+groove	Імітація вирізаної рамки (вдає глибину)
+ridge	Імітація виступаючої рамки (як рельєф)
+inset	Елемент виглядає "втиснутим" у фон
+outset	Елемент виглядає "випнутим" назовні
+none	Без рамки
+hidden	Рамка прихована (як none, але впливає на таблиці та layout)*/
+
+  background-color: rgba(255, 255, 255, 0); /* Прозорий фон кнопки */
+  font-size: 21px;             /* Розмір тексту */
+  color: #000000ff;            /* Колір тексту (чорний) */
+  cursor: pointer;             /* Курсор у вигляді руки при наведенні */
+  z-index: 0;                  /* Базовий шар, щоб псевдоелемент був під текстом */
+  transition: color 0.3s ease; /* Плавна зміна кольору тексту (якщо я її додам при наведенні) */
+}
+
+/* Псевдоелемент, який імітує "воду" */
+.hero-description button::before {
+  content: "";                 /* Обов’язково — порожній контент для появи елемента */
+  position: absolute;          /* Абсолютне позиціонування відносно кнопки */
+  bottom: 0;                   /* Прилягає до нижнього краю кнопки */
+  left: 0;                     /* Прилягає до лівого краю кнопки */
+  width: 100%;                 /* Займає всю ширину кнопки */
+  height: 0%;                  /* Початково висота 0% (невидима вода) */
+  background: rgba(255, 255, 255, 0.66); /* Напівпрозора біла заливка — враження води */
+  z-index: 0;                  /* Під текстом кнопки */
+  transition: height 0.6s ease; /* Плавне підняття рівня води */
+  border-radius: inherit;      /* Наслідує округлення кутів від кнопки */
+}
+
+/* При наведенні: вода піднімається до 70% висоти кнопки */
+.hero-description button:hover::before {
+  height: 70%;                 /* 70% — заповнення водою */
+}
+
+/* Обов’язково: текст над шаром води */
+.hero-description button span {
+  position: relative;          /* Щоб z-index спрацював */
+  z-index: 4;                  /* Текст завжди зверху */
 }
