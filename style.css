@@ -173,7 +173,7 @@ hidden	Рамка прихована (як none, але впливає на та
   color: #000000ff;            /* Колір тексту (чорний) */
   cursor: pointer;             /* Курсор у вигляді руки при наведенні */
   z-index: 0;                  /* Базовий шар, щоб псевдоелемент був під текстом */
-  transition: color 0.3s ease; /* Плавна зміна кольору тексту (якщо я її додам при наведенні) */
+  
 }
 
 /* Псевдоелемент, який імітує "воду" */
@@ -199,4 +199,83 @@ hidden	Рамка прихована (як none, але впливає на та
 .hero-description button span {
   position: relative;          /* Щоб z-index спрацював */
   z-index: 4;                  /* Текст завжди зверху */
+}
+
+
+
+
+
+
+/*Другий слайд*/
+
+
+
+
+
+.SecondSlide{
+    background-image: url('./pngFolder/backgroundS2.png');
+    background-size: contain; /*Зображення поміщається всередину елемента повністю,
+    Може залишати порожні поля по боках або знизу */ 
+    background-repeat: no-repeat; /*не повторює фон */
+         /*background-repeat: repeat-x;
+        повтор по горизонталі або
+
+        background-repeat: repeat-y;
+        повтор по вертикалі*/
+    /*background-position: center (центрує зображення)*/
+    padding-top:60px;/*внутрішні відступи: (верх/низ)*/
+    padding-bottom:60px;
+    height: 1414px;
+}
+
+.BY_DESIGNERS_FOR_DESIGNERS{
+    position: relative; /* дозволяє позиціонувати псевдоелемент */
+    padding-left:30px;
+    color: rgb(104, 140, 107);
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1.01px;
+    
+}
+
+.BY_DESIGNERS_FOR_DESIGNERS::after {
+    
+    content: "";
+    position: absolute;
+    width: 100%; /* товщина лінії */
+    height: 1px; /* тягнеться на весь контейнер */
+    background-color: white; /* білий колір */
+    top: 6px;
+    left: calc(22% + 30px); /* 30px правіше тексту */
+}
+
+.SecondSlide h2{
+    padding-top:57px;
+    padding-left:30px;
+    color: rgb(126, 165, 181);
+    font-family: Roboto;
+    font-size: 57px;
+    letter-spacing: 3.01px;
+
+}
+
+.SecondText{
+    height:273px;
+    padding-top:50px;
+    padding-left:30px;
+    padding-right:240px;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 41px;
+    line-height: 54.6px; /* висота лінії*/
+   
+}
+
+.SecondSlide img{
+    padding-top:167px;
+    display: block;         /* дозволяє margin працювати */
+    width:1140px;
+    
+    padding-left:30px;
+    
 }
