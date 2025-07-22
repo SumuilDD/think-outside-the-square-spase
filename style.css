@@ -225,7 +225,7 @@ hidden	Рамка прихована (як none, але впливає на та
     /*background-position: center (центрує зображення)*/
     padding-top:60px;/*внутрішні відступи: (верх/низ)*/
     padding-bottom:60px;
-    height: 1380px;
+    height: 1375px;
 }
 
 .BY_DESIGNERS_FOR_DESIGNERS{
@@ -242,12 +242,13 @@ hidden	Рамка прихована (як none, але впливає на та
     
     content: "";
     position: absolute;
-    width: 100%; /* товщина лінії */
-    height: 1px; /* тягнеться на весь контейнер */
-    background-color: white; /* білий колір */
+    height: 1px;
+    background-color: white;
     top: 6px;
-    left: calc(22% + 30px); /* 30px правіше тексту */
+    left: calc(22% + 30px); /* початок лінії */
+    right: 30px; /* щоб лінія не доходила до краю */
 }
+
 
 .SecondSlide h2{
     padding-top:57px;
@@ -278,4 +279,120 @@ hidden	Рамка прихована (як none, але впливає на та
     
     padding-left:30px;
     
+}
+
+
+
+
+
+/*          Slide 3         */
+
+
+.ThirdSlide{
+    background-color:#FFD400; /*жовтий фон*/
+    padding-top:60px;/*внутрішні відступи: (верх)*/
+    padding-bottom:0px;/*внутрішні відступи: (низ)*/
+}
+
+.TRUSTED_BY_THE_BEST{
+    position: relative; /* дозволяє позиціонувати псевдоелемент */
+    padding-left:30px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 1.01px;
+}
+
+.TRUSTED_BY_THE_BEST::after {
+    
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: black;
+    top: 6px;
+    left: calc(17% + 30px); /* початок лінії */
+    right: 30px; /* щоб лінія не доходила до краю */
+}
+
+.The_worlds_leading h2{
+    color: rgb(0, 0, 0);
+    font-size: 84px;
+   
+    line-height: 86.4px;
+    letter-spacing: 2.5px;
+    text-align: left;
+    padding-left:30px;
+    padding-top:55px;
+}
+
+.see_their_portfolios{
+    padding-left:30px;
+    padding-top:22px;
+    color: rgb(76, 63, 0);
+    font-family: Roboto;
+    font-size: 32px;
+    line-height: 51.2px;
+}
+
+
+.logos{
+  
+    padding-top: 85px;
+    width:100%;  /* займає всю доступну ширину в .site-header */
+    display: grid; /* Використовуємо CSS Grid для точного розміщення елементів у сітці */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    
+}
+.logos li{
+    opacity: 0.5; 
+    color-img: rgba(0, 0, 0, 0.5);
+    height:50px;
+    padding left:30px;
+    padding right:30px;
+    display: flex; /*роблю хедер flex-контейнером*/
+    justify-content: center;/*вирівнює дочірній .nav по центру*/
+}
+
+
+.logos li:hover{ 
+    opacity: 1; 
+    transition: opacity 0.7s ease;
+}
+
+.portret{
+
+    gap:20px;
+    padding-top: 87px;
+    width:100%;  /* займає всю доступну ширину в .site-header */
+    display: grid; /* Використовуємо CSS Grid для точного розміщення елементів у сітці */
+    grid-template-columns: 1fr 1fr 1fr 1fr ; 
+}
+
+.portret li img{
+    
+    width:255px;
+    height:340px;
+}
+
+.avtor{
+    gap:20px;
+    padding-top: 20px;
+    width:100%;  /* займає всю доступну ширину в .site-header */
+    display: grid; /* Використовуємо CSS Grid для точного розміщення елементів у сітці */
+    grid-template-columns: 1fr 1fr 1fr 1fr ; 
+}
+
+.avtor li{
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    line-height: 36.11px;
+    text-align: left;
+}
+.avtor li span{
+    font-size: 19px;
+    line-height: 26px;
+}
+
+.portret_galery {
+    padding:58px 30px 60px 30px;
 }
