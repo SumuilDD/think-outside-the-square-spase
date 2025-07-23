@@ -396,3 +396,101 @@ hidden	Рамка прихована (як none, але впливає на та
 .portret_galery {
     padding:58px 30px 60px 30px;
 }
+
+
+/*           slide 4     */
+
+.car{
+    background-image: url('./pngFolder/car_background.png');
+    background-size: contain; /*Зображення поміщається всередину елемента повністю,
+    Може залишати порожні поля по боках або знизу */ 
+    background-repeat: no-repeat; /*не повторює фон */
+         /*background-repeat: repeat-x;
+        повтор по горизонталі або
+
+        background-repeat: repeat-y;
+        повтор по вертикалі*/
+    /*background-position: center (центрує зображення)*/
+    padding-top:60px;/*внутрішні відступи: (верх/низ)*/
+    padding-bottom:30px;
+    
+    height: 782px;
+}
+
+.PORTFOLIOS_BUILT_WITH_PRIDE{
+position: relative; /* дозволяє позиціонувати псевдоелемент */
+    padding-left:30px;
+    padding-top:8px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1.01px;
+}
+
+.PORTFOLIOS_BUILT_WITH_PRIDE::after {
+    
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: white;
+    top: 12px;
+    left: calc(22% + 30px); /* початок лінії */
+    right: 30px; /* щоб лінія не доходила до краю */
+}
+
+.car h2{
+    padding-top:54px;
+    padding-left:30px;
+    color: rgb(255, 255, 255);
+    font-size: 83px;
+    line-height: 86.4px;
+    letter-spacing: 2.5px;
+
+}
+
+.Semplice{
+    padding-left:30px;
+    padding-top:158px;
+    color: rgb(255, 255, 255);
+    font-size: 44px;
+    line-height: 75.01px;
+    letter-spacing: 2.59px;
+
+}
+
+.Designer_strilka{
+    margin-right:30px;
+    gap:0px;
+    display: flex;
+    align-items: center;     /* вертикальне вирівнювання */
+    
+}
+
+.car_image{
+    gap:10px;
+    display: flex;
+    margin-left: auto;
+    
+}
+
+.car_image img{
+    display: block;      /*поводиться як блок*/
+    height: 60.29px;
+    width: 79.93px;
+    opacity: 0.6; 
+}
+.car_image img:hover{ 
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+    opacity: 1; 
+    transition: opacity  0.7s ease;
+}
+
+.car h3{
+    padding-left:30px;
+    padding-top:10px;
+    color: rgb(255, 255, 255);
+    font-size: 91px;
+    line-height: 98px;
+    letter-spacing: 2.5px;
+}
