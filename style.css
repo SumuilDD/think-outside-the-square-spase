@@ -414,11 +414,11 @@ hidden	Рамка прихована (як none, але впливає на та
     padding-top:60px;/*внутрішні відступи: (верх/низ)*/
     padding-bottom:30px;
     
-    height: 782px;
+    height: 780px;
 }
 
 .PORTFOLIOS_BUILT_WITH_PRIDE{
-position: relative; /* дозволяє позиціонувати псевдоелемент */
+    position: relative; /* дозволяє позиціонувати псевдоелемент */
     padding-left:30px;
     padding-top:8px;
     color: rgba(255, 255, 255, 1);
@@ -493,4 +493,113 @@ position: relative; /* дозволяє позиціонувати псевдо�
     font-size: 91px;
     line-height: 98px;
     letter-spacing: 2.5px;
+}
+
+
+/*                SLide4           */
+
+.DESIGN_FOR_THE_FUTURE{
+    position: relative; /* дозволяє позиціонувати псевдоелемент */
+    padding-left:30px;
+    padding-top:60px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1.01px;
+}
+
+.DESIGN_FOR_THE_FUTURE::after {
+    
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    background-color: black;
+    top: 64px;
+    left: calc(19% + 30px); /* початок лінії */
+    right: 30px; /* щоб лінія не доходила до краю */
+}
+
+.fifth_slide{
+    background-color: rgba(255, 255, 255, 1); 
+}
+
+.fifth_slide h3{
+    padding-top:54px;
+    padding-left:30px;
+    color: rgb(0, 0, 0);
+    font-size: 84px;
+    line-height: 86.4px;
+    letter-spacing: 2.5px;
+
+}
+
+.Black_custom{
+    margin-top:91px;
+    width: 600px;
+    height: 642px;
+    left: 0;
+    background: rgb(0, 0, 0);
+}
+
+.Black_custom h2{
+    padding-top:122px;
+    padding-left:100px;
+    color: rgb(255, 255, 255);
+    font-size: 49px;
+    line-height: 52px;
+    letter-spacing: 1.4px;
+
+}
+
+.hover_effects{
+    padding-top:32px;
+    padding-left:100px;
+    padding-right:170px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+}
+
+.hernya{
+    position: absolute;
+    color:white;
+    background-color: rgba(255, 255, 255, 0); /* Прозорий фон кнопки */
+    margin-top:32px;
+    margin-left:100px;
+    width: 137px;
+    height: 34px;
+    
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+
+}
+
+.MEDIA_WORK{
+    padding-top:97px;
+    padding-left:100px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 22.23px;
+    letter-spacing: 0%;
+}
+
+.background_5 {
+    background-image: url('./pngFolder/background5full.png');
+    margin-top:91px;
+    background-size: contain;
+    background-repeat: repeat-y;
+    width: 600px;
+    height: 642px;
+}
+
+.background_5 img {
+    width: 600px;
+    height: 482px;
+}
+
+.black_white{
+    
+    display: grid; /* Використовуємо CSS Grid для точного розміщення елементів у сітці */
+    grid-template-columns: 1fr 1fr  ; 
 }
