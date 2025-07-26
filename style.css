@@ -520,6 +520,7 @@ hidden	Рамка прихована (як none, але впливає на та
 }
 
 .fifth_slide{
+    z-index: 2;
     background-color: rgba(255, 255, 255, 1); 
 }
 
@@ -562,6 +563,7 @@ hidden	Рамка прихована (як none, але впливає на та
 }
 
 .hernya{
+    font-size: 22px;
     position: absolute;
     color:white;
     background-color: rgba(255, 255, 255, 0); /* Прозорий фон кнопки */
@@ -572,16 +574,19 @@ hidden	Рамка прихована (як none, але впливає на та
     
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 6px;
+    
 
 }
 
 .MEDIA_WORK{
+    
     padding-top:97px;
     padding-left:100px;
     color: rgb(255, 255, 255);
     font-size: 16px;
     line-height: 22.23px;
     letter-spacing: 0%;
+    
 }
 
 .background_5 {
@@ -602,4 +607,223 @@ hidden	Рамка прихована (як none, але впливає на та
     
     display: grid; /* Використовуємо CSS Grid для точного розміщення елементів у сітці */
     grid-template-columns: 1fr 1fr  ; 
+}
+
+
+
+
+
+
+
+/*       СЛАЙД 5        */
+
+.e_class{
+    position: relative; 
+    overflow: hidden;
+    background-color:#FFD400; /*жовтий фон*/
+    height:805px;
+    width: 600px;
+
+}
+
+.e_black{
+    /* Vector */
+    margin-top: -130px;
+    position: absolute;
+    width: 460.84px;
+    height: 488.03px;
+    margin-left: 73.81px;
+   
+    
+}
+
+.e_white{
+   
+    margin-top: -130px;
+    position: absolute;
+    width: 460.84px;
+    height: 488.03px;
+    margin-left: 83.64px;
+    
+}
+
+.e_class h2{
+    margin-top:432px;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    line-height: 52px;
+    letter-spacing: 1.4px;
+    text-align: center;
+}
+
+.e_class p{
+    padding-top:31px;
+    padding-left:108px;
+    padding-right:108px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+.hernya2{
+    font-size: 22px;
+    position: absolute;
+    color:black;
+    background-color: rgba(255, 255, 255, 0); /* Прозорий фон кнопки */
+    margin-top:32px;
+    margin-left:232px;
+    width: 137px;
+    height: 34px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+
+}
+
+.yellow_white{
+    display: grid; /* Використовуємо CSS Grid для точного розміщення елементів у сітці */
+    grid-template-columns: 1fr 1fr  ; 
+
+}
+
+.pfone{
+    position: relative; 
+    overflow: hidden;
+    background: rgb(239, 241, 244);
+    height:805px;
+    width: 600px;
+}
+
+.pfone h2{
+    padding-top:66px;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    line-height: 52px;
+    letter-spacing: 1.4px;
+    text-align: center;
+}
+
+.pfone p{
+    padding-right:96px;
+    padding-left:96px;
+    padding-top:33px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+.pfone img{
+    
+    margin-top:67px;
+    width: 600px;
+    height: 403px;
+}
+
+
+/*     слайд 5     */
+
+.frenns_section {
+    display: flex; 
+    align-items: stretch; /* розтягує .grey_frenns до повної висоти сусіда */  
+}
+
+.onefoto{
+    position: relative; 
+    width: 700px;
+    height: 730px;
+    background: linear-gradient(
+  to bottom,                  /* напрям зверху вниз */
+  rgb(115, 115, 115) 0%,      /* початок кольору */
+  rgb(115, 115, 115) 90%,     /* 95% — ще основний колір */
+  #ffffff 90%,                /* з 95% починається білий */
+  #ffffff 100%                /* до самого низу */
+);
+}
+
+.onefoto p{
+    z-index: 3;
+    position: absolute;
+    width: 545px;
+    height: 28px;
+    left: 15px;
+    top: 275px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 27.78px;
+
+}
+
+.top-line{
+    margin-top:264px;
+    height: 12px;                /* висота лінії */
+    background-color: black;    /* колір — чорний */
+}
+
+.onefoto img{
+    
+    display: block;
+    width: 700px;
+    height: 416px;
+    left: 0;
+    
+}
+
+.grey_frenns{
+    
+    background: linear-gradient(
+  to bottom,                  /* напрям зверху вниз */
+  rgb(115, 115, 115) 0%,      /* початок кольору */
+  rgb(115, 115, 115) 90%,     /* 95% — ще основний колір */
+  #ffffff 90%,                /* з 95% починається білий */
+  #ffffff 100%                /* до самого низу */
+);
+    width: 500px;
+    left: 700px;
+}
+
+
+.grey_frenns h2{
+    width:500px;
+    color: rgb(255, 255, 255);
+    font-size: 49px;
+    line-height: 52px;
+    letter-spacing: 1.4px;
+    padding-top:102px;
+    padding-left:100px;
+}
+
+.An_immediate{
+    padding-top:32px;
+    padding-left:100px;
+    padding-right:82px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+
+}
+
+.hernya3{
+    font-size: 22px;
+    
+    color:white;
+    background-color: rgba(255, 255, 255, 0); /* Прозорий фон кнопки */
+    margin-top:32px;
+    margin-left:100px;
+    width: 137px;
+    height: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+}
+
+.ARTWORK_BY_FRENSS{
+    padding-top:32px;
+    padding-left:100px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 22.23px;
+
 }
