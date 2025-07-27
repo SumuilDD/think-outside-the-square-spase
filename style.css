@@ -3,13 +3,14 @@
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1200px;
-
+    width: 1200px;
     @media (max-width: 550px) {
     padding: 0 10px;
   }
 }
 
 .site-header{
+    width: 1200px;
     background-color:#FFD400; /*жовтий фон*/
     padding:20px 40px;/*внутрішні відступи: 24(верх/низ), 40(справ/зліва)*/
     display: flex; /*роблю хедер flex-контейнером*/
@@ -113,6 +114,7 @@
 
 
 .FirstSLide{
+    width: 1200px;
     background-color:#FFD400; /*жовтий фон*/
     padding:24px 30px;/*внутрішні відступи: (верх/низ),(справ/зліва)*/ 
 }
@@ -213,8 +215,9 @@ hidden	Рамка прихована (як none, але впливає на та
 
 
 .SecondSlide{
+    width: 1200px;
     background-image: url('./pngFolder/backgroundS2.png');
-    background-size: contain; /*Зображення поміщається всередину елемента повністю,
+    background-size: 1200px; /*Зображення поміщається всередину елемента повністю,
     Може залишати порожні поля по боках або знизу */ 
     background-repeat: no-repeat; /*не повторює фон */
          /*background-repeat: repeat-x;
@@ -277,7 +280,7 @@ hidden	Рамка прихована (як none, але впливає на та
     display: block;         /* дозволяє margin працювати */
     width:1140px;
     
-    padding-left:30px;
+    margin-left:30px;
     
 }
 
@@ -289,6 +292,7 @@ hidden	Рамка прихована (як none, але впливає на та
 
 
 .ThirdSlide{
+    width: 1200px;
     background-color:#FFD400; /*жовтий фон*/
     padding-top:60px;/*внутрішні відступи: (верх)*/
     padding-bottom:0px;/*внутрішні відступи: (низ)*/
@@ -401,8 +405,9 @@ hidden	Рамка прихована (як none, але впливає на та
 /*           slide 4     */
 
 .car{
+     width: 1200px;
     background-image: url('./pngFolder/car_background.png');
-    background-size: contain; /*Зображення поміщається всередину елемента повністю,
+    background-size: 1200px 780px; /*Зображення поміщається всередину елемента повністю,
     Може залишати порожні поля по боках або знизу */ 
     background-repeat: no-repeat; /*не повторює фон */
          /*background-repeat: repeat-x;
@@ -520,7 +525,7 @@ hidden	Рамка прихована (як none, але впливає на та
 }
 
 .fifth_slide{
-    z-index: 2;
+     width: 1200px;
     background-color: rgba(255, 255, 255, 1); 
 }
 
@@ -593,18 +598,19 @@ hidden	Рамка прихована (як none, але впливає на та
     background-image: url('./pngFolder/background5full.png');
     margin-top:91px;
     background-size: contain;
-    background-repeat: repeat-y;
+    max-width:600px;
     width: 600px;
     height: 642px;
 }
 
 .background_5 img {
+    max-width:600px;
     width: 600px;
     height: 482px;
 }
 
 .black_white{
-    
+    max-width:1200px;
     display: grid; /* Використовуємо CSS Grid для точного розміщення елементів у сітці */
     grid-template-columns: 1fr 1fr  ; 
 }
@@ -682,6 +688,7 @@ hidden	Рамка прихована (як none, але впливає на та
 }
 
 .yellow_white{
+     width: 1200px;
     display: grid; /* Використовуємо CSS Grid для точного розміщення елементів у сітці */
     grid-template-columns: 1fr 1fr  ; 
 
@@ -726,6 +733,7 @@ hidden	Рамка прихована (як none, але впливає на та
 /*     слайд 5     */
 
 .frenns_section {
+     width: 1200px;
     display: flex; 
     align-items: stretch; /* розтягує .grey_frenns до повної висоти сусіда */  
 }
@@ -825,5 +833,106 @@ hidden	Рамка прихована (як none, але впливає на та
     color: rgb(255, 255, 255);
     font-size: 16px;
     line-height: 22.23px;
+
+}
+
+
+
+/*        slide 6        */
+
+
+
+.ebat{
+    width: 1200px;
+    height:1070px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.CREATE_SOMETHING_ORIGINAL{
+ position: relative; /* дозволяє позиціонувати псевдоелемент */
+    padding-left:30px;
+    padding-top:60px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1.01px;
+}
+
+.CREATE_SOMETHING_ORIGINAL::after {
+    
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: white;
+    top: 64px;
+    left: calc(21% + 30px); /* початок лінії */
+    right: 30px; /* щоб лінія не доходила до краю */
+}
+
+.ebat h2{
+    padding-left:30px;
+    padding-top:54px;
+    color: rgb(255, 255, 255);
+    font-size: 85px;
+    line-height: 86.4px;
+    letter-spacing: 2.5px;
+
+}
+
+.Modules_and_layout{
+    padding-left:30px;
+    padding-top:18px;
+    width:800px;
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+    line-height: 54.6px;
+
+}
+
+.icon_galery{
+    margin-top:150px;
+    margin-left:30px;
+    margin-right:30px;
+    display: grid; /* Використовуємо CSS Grid для точного розміщення елементів у сітці */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ; 
+    
+}
+
+.galery_element1{
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px;
+    border-radius:16px;
+    width: 228px;
+    height: 252px;
+}
+
+.galery_element2{
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px;
+    border-radius: 12px;
+    background: rgb(19, 19, 19);
+    width: 228px;
+    height: 252px;
+}
+
+.iconka{
+    
+    max-height:90px;
+}
+
+.plusik{
+    margin-left: auto; 
+    width: 21.98px;
+    height: 23.28px;
+}
+
+.textus{
+    width: 150px;
+    padding-top:89px;
+    color: rgb(142, 142, 142);
+    font-size: 20px;
+    line-height: 33.33px;
 
 }
