@@ -1012,3 +1012,103 @@ hidden	Рамка прихована (як none, але впливає на та
     line-height: 51.2px;
 
 }
+
+
+
+
+/*               8 SLIDE               */
+
+
+
+
+.eight_slide {
+    background: rgba(255, 255, 255, 1);
+    width: 1200px;
+    height: 1129px;
+}
+
+.eight_slide h2{
+    padding-top:102px;
+    padding-left:30px;
+    color: rgb(0, 0, 0);
+    font-size: 82px;
+    line-height: 86.4px;
+    letter-spacing: 2.5px;
+}
+
+.Compare_all_editions{
+    padding-top:22px;
+    padding-left:30px;
+    color: rgb(76, 63, 0);
+    font-size: 32px;
+    line-height: 51.2px;
+
+}
+
+.line{
+    margin-top:52px;
+    width:1140px;
+    margin-left: 30px;
+    height: 1px;                /* висота лінії */
+    background-color: rgb(63, 63, 63);    /* колір — чорний */
+}
+
+.book_shelf{
+    margin-top:80px;
+    margin-left:-60px;
+    display: grid; /* Використовуємо CSS Grid для точного розміщення елементів у сітці */
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.books{
+    width: 360px;
+    height: 330px;
+    
+    
+}
+
+
+
+.books img{
+    width: 353px;
+    height: 324px;
+}
+
+.b50b{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* дві колонки */
+}
+
+.b50b h3 {
+    margin-top:29px;
+    grid-column: 2;
+    color: rgb(0, 0, 0);
+    font-size: 44px;
+    line-height: 66.68px;
+    letter-spacing: 1.49px;
+    text-align: center;
+
+}
+
+.book_p{
+    grid-column: 2;
+    color: rgb(174, 174, 174);
+    font-size: 22px;
+    line-height: 30.55px;
+    text-align: center;
+}
+
+.hernya4{
+    margin-top:33px;
+    text-align: center;
+    grid-column: 2;
+    font-size: 22px;
+    color:black;
+    background-color: rgba(255, 255, 255, 0); /* Прозорий фон кнопки */
+    width: 183px;
+    height: 44px;
+    border: 3px solid rgb(170, 170, 170);
+    
+    background: rgb(255, 255, 255);
+    border-radius: 90px;
+}
