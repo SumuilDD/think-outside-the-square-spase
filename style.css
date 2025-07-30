@@ -1112,3 +1112,182 @@ hidden	Рамка прихована (як none, але впливає на та
     background: rgb(255, 255, 255);
     border-radius: 90px;
 }
+
+
+
+
+
+
+/*              9 slide             */
+
+
+.ninth_slide{
+    height: 1322px;
+    width:1200px;
+    background-color: rgb(255, 89, 36);
+}
+
+.ninth_head{
+    gap:15px;
+    padding-top:60px;
+    padding-left:30px;
+    display: flex; 
+    
+}
+
+.TM{
+    color:white;
+    font-size:8px;
+    position: absolute; /* абсолютне позиціонування */
+    top: 0px; /* піднімаємо над текстом */
+    right: -15px; /* трохи зсуваємо вправо */
+}
+
+.Semplice_TM{
+    position:relative;
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+}
+
+.ninth_slide img{
+    margin-top: 4px;
+    margin-left: 10px;
+    width:10px;
+    height:10px;
+    
+}
+
+.Supply{
+    
+    color: rgba(0, 0, 0, 1);
+    font-size: 22px;
+}
+
+.ninth_line {
+    margin-top: 10px;
+    width: calc(100% + 30px); /* початок лінії */
+    margin-right: 30px; /* щоб лінія не доходила до краю */
+    height:1px;
+    background-color:rgba(0, 0, 0, 1);
+}
+
+
+.ninth_slide h2{
+    padding-top:45px;
+    padding-left:30px;
+    color: rgb(0, 0, 0);
+    font-size: 82px;
+    line-height: 85.25px;
+    letter-spacing: 2.5px;
+
+}
+
+.button_galary{
+    width:900px;
+    gap:15px;
+    padding-top:60px;
+    padding-left:30px;
+    display: flex;
+  flex-wrap: wrap;       
+                     /* відступи між кнопками */
+
+}
+
+.button_galary button{
+  position: relative;          /* Дозволяє абсолютно позиціонувати псевдоелемент всередині кнопки */
+  overflow: hidden;            /* Обрізає все, що виходить за межі кнопки (псевдоелемент не вилізе за контур) */
+  font-family: roboto;         /* Шрифт тексту кнопки */
+  justify-self: end;           /* Вирівнює кнопку праворуч у сітці (якщо контейнер — grid) */
+  padding: 10px 20px;        /* внутрішні відступи (впливають на розмір) */                /* Фіксована висота кнопки */
+  border-radius: 180px;        /* Максимальне округлення кутів (практично робить кнопку овальною) */
+  border: 4px solid white;     /* Рамка 4px, суцільна, білого кольору */
+ /* Типи ліній (border-style):
+solid	Суцільна лінія
+dashed	Пунктирна лінія (великий штрих)
+dotted	Точкова лінія
+double	Подвійна лінія
+groove	Імітація вирізаної рамки (вдає глибину)
+ridge	Імітація виступаючої рамки (як рельєф)
+inset	Елемент виглядає "втиснутим" у фон
+outset	Елемент виглядає "випнутим" назовні
+none	Без рамки
+hidden	Рамка прихована (як none, але впливає на таблиці та layout)*/
+
+  background-color: rgba(255, 255, 255, 0); /* Прозорий фон кнопки */
+  font-size: 21px;             /* Розмір тексту */
+  color: #000000ff;            /* Колір тексту (чорний) */
+  cursor: pointer;             /* Курсор у вигляді руки при наведенні */
+  z-index: 0;                  /* Базовий шар, щоб псевдоелемент був під текстом */
+  
+}
+
+/* Псевдоелемент, який імітує "воду" */
+.button_galary button::before {
+  content: "";                 /* Обов’язково — порожній контент для появи елемента */
+  position: absolute;          /* Абсолютне позиціонування відносно кнопки */
+  bottom: 0;                   /* Прилягає до нижнього краю кнопки */
+  left: 0;                     /* Прилягає до лівого краю кнопки */
+  width: 100%;                 /* Займає всю ширину кнопки */
+  height: 0%;                  /* Початково висота 0% (невидима вода) */
+  background: rgba(255, 255, 255, 0.66); /* Напівпрозора біла заливка — враження води */
+  z-index: 0;                  /* Під текстом кнопки */
+  transition: height 0.6s ease; /* Плавне підняття рівня води */
+  border-radius: inherit;      /* Наслідує округлення кутів від кнопки */
+}
+
+/* При наведенні: вода піднімається до 70% висоти кнопки */
+.button_galary button:hover::before {
+  height: 70%;                 /* 70% — заповнення водою */
+}
+
+/* Обов’язково: текст над шаром води */
+.button_galary button span {
+  position: relative;          /* Щоб z-index спрацював */
+  z-index: 4;                  /* Текст завжди зверху */
+}
+
+.View_full_catalog{
+    padding-top:22px;
+    padding-left:30px;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    line-height: 38.4px;
+
+}
+
+.ninth_watch{
+    margin-top:60px;
+    margin-left:30px;
+    display: grid; /* Використовуємо CSS Grid для точного розміщення елементів у сітці */
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.watch_foto{
+    background-color:rgba(255, 255, 255, 1);
+    width: 353px;
+    height: 610px;
+}
+
+.watch_foto img{
+    margin:0px;
+    width: 353px;
+    height: 488px;
+}
+
+.watch_name{
+    padding-top:30px;
+    padding-left:30px;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    line-height: 33.33px;
+    letter-spacing: 0.7px;
+
+}
+
+.watch_price{
+    padding-left:30px;
+    color: rgb(76, 76, 76);
+    font-size: 18px;
+    line-height: 25px;
+
+}
