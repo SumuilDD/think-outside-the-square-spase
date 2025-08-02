@@ -485,6 +485,8 @@ hidden	Рамка прихована (як none, але впливає на та
     opacity: 0.6; 
 }
 .car_image img:hover{ 
+    
+    cursor: pointer;
     transform: scale(1.1); 
     transition: transform 0.3s ease;
     opacity: 1; 
@@ -623,6 +625,9 @@ hidden	Рамка прихована (як none, але впливає на та
 
 /*       СЛАЙД 5        */
 
+
+
+
 .e_class{
     position: relative; 
     overflow: hidden;
@@ -730,7 +735,16 @@ hidden	Рамка прихована (як none, але впливає на та
 }
 
 
+
+
+
+
+
 /*     слайд 5     */
+
+
+
+
 
 .frenns_section {
      width: 1200px;
@@ -839,6 +853,7 @@ hidden	Рамка прихована (як none, але впливає на та
 
 
 /*        slide 6        */
+
 
 
 
